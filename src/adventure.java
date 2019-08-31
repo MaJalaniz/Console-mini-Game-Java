@@ -50,6 +50,7 @@ public class adventure {
                         "Leave park %n" +
                         "======================%n");
                 String option3 = scanner.next();
+                //Loop to play around and When finished loop back to let's go outside when finished playing
             } else if (option2.contains("store")) {
                 System.out.println("lets go pick up some stuff at the store!");
                 System.out.format("Should we ... %n " +
@@ -63,6 +64,7 @@ public class adventure {
                         "Leave store %n" +
                         "======================%n");
                 String option3 = scanner.next();
+                //Loop back to option Store if buying more stuff and add loop to lets go outside when done
             } else if (option2.contains("home")) {
                 System.out.println("We'll stay in today");
                 System.out.format("Should we ... %n " +
@@ -91,11 +93,13 @@ public class adventure {
                     int punch = (int)(Math.random() * 101);
                     String punchTime = scanner.next();
                     System.out.println("You hit the bag for " + punch + " damage!");
+                    //Loop the punches so the person punch bag until they choose to stop
                 } else if(option4.contains("speed")) {
                     System.out.println("You get into ready stance and start hitting speed bag");
                 } else{
                     System.out.println("Nevermind");
                 }
+                //Loop back to options Home since we are at home
             } else if (option1.contains("no") && !confirmation) {
                 System.out.println("See ya later then!");
             }
