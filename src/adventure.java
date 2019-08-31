@@ -88,6 +88,9 @@ public class adventure {
                 String option4 = scanner.next();
                 if (option4.contains("heavy")) {
                     System.out.println("You square up and begin hitting the heavy bag");
+                    int punch = (int)(Math.random() * 101);
+                    String punchTime = scanner.next();
+                    System.out.println("You hit the bag for " + punch + " damage!");
                 } else if(option4.contains("speed")) {
                     System.out.println("You get into ready stance and start hitting speed bag");
                 } else{
