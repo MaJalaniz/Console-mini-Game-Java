@@ -1,7 +1,7 @@
 import java.util.Scanner;
-import java.util.Random;
 
-public class adventure {
+
+public class adventure extends brevity{
 
     public static void main(String[] args) {
         System.out.println("Hello, World!");
@@ -102,7 +102,8 @@ public class adventure {
                          if (option4.contains("heavy")) {
                              System.out.println("You square up and begin hitting the heavy bag");
 
-                             int punch = (int) (Math.random() * 101);
+                            // int punch = (int) (Math.random() * 101);
+
                              String punchTime = scanner.next();
 
                              if (punch > 50) {
