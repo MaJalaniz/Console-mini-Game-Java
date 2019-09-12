@@ -114,6 +114,7 @@ public class adventure extends brevity{
                                  System.out.println("You hit the bag for " + Attack.getPunch() + " damage!");
                                  System.out.println("Don't hurt yourself hitting the bag too hard now");
                              } else if (Attack.getPunch() < 50) {
+                                 System.out.println("You hit the bag for " + Attack.getPunch() + " damage!");
                                  System.out.println("hard enough to work the bag, but not enough to hurt yourself.");
                              }
                              System.out.println("Time to get some rest!");
