@@ -103,14 +103,17 @@ public class adventure extends brevity{
                              System.out.println("You square up and begin hitting the heavy bag");
 
                             // int punch = (int) (Math.random() * 101);
+                             adventure Attack = new adventure();
+                            //System.out.println(Attack.getPunch());
+                                Attack.getPunch();
 
                              String punchTime = scanner.next();
 
-                             if (punch > 50) {
+                             if (Attack.getPunch() > 50) {
                                  //System.out.println("Don't hurt yourself hitting the bag too hard now");
-                                 System.out.println("You hit the bag for " + punch + " damage!");
+                                 System.out.println("You hit the bag for " + Attack.getPunch() + " damage!");
                                  System.out.println("Don't hurt yourself hitting the bag too hard now");
-                             } else if (punch < 50) {
+                             } else if (Attack.getPunch() < 50) {
                                  System.out.println("hard enough to work the bag, but not enough to hurt yourself.");
                              }
                              System.out.println("Time to get some rest!");
