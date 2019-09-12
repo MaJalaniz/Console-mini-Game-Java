@@ -97,20 +97,31 @@ public class adventure {
                                 "======================%n");
                         boolean leave = userInput.contains("leave");
 
-                        String option4 = scanner.next();
-                        if (option4.contains("heavy")) {
-                            System.out.println("You square up and begin hitting the heavy bag");
-                            int punch = (int) (Math.random() * 101);
-                            String punchTime = scanner.next();
-                            System.out.println("You hit the bag for " + punch + " damage!");
-                            //Loop the punches so the person punch bag until they choose to stop
-                        } else if (option4.contains("speed")) {
-                            System.out.println("You get into ready stance and start hitting speed bag");
-                        } else if (option4.contains("leave") || leave) {
-                            System.out.println("ok, lets do something else.");
-                        } else {
-                            System.out.println("Nevermind");
-                        }
+                         String option4 = scanner.next();
+
+                         if (option4.contains("heavy")) {
+                             System.out.println("You square up and begin hitting the heavy bag");
+
+                             int punch = (int) (Math.random() * 101);
+                             String punchTime = scanner.next();
+
+                             if (punch > 50) {
+                                 //System.out.println("Don't hurt yourself hitting the bag too hard now");
+                                 System.out.println("You hit the bag for " + punch + " damage!");
+                                 System.out.println("Don't hurt yourself hitting the bag too hard now");
+                             } else if (punch < 50) {
+                                 System.out.println("hard enough to work the bag, but not enough to hurt yourself.");
+                             }
+                             System.out.println("Time to get some rest!");
+                             //Loop the punches so the person punch bag until they choose to stop
+                         } else if (option4.contains("speed")) {
+                             System.out.println("You get into ready stance and start hitting speed bag");
+                         } else if (option4.contains("leave") || leave) {
+                             System.out.println("ok, lets do something else.");
+                         } else {
+                             System.out.println("Nevermind");
+                         }
+
                         //Loop back to options Home since we are at home
                     } else {
                         System.out.println("I wonder what happened here?");
